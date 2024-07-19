@@ -9,7 +9,7 @@ export default async function (files: FileList, params?: any): Promise<FileList>
  const to = params?.emailTo;
 
  if (!to) {
-  throw new Error('emailTo not configured.');
+  throw new Error('emailTo not set.');
  }
  let transporter = nodemailer.createTransport({
   pool: true,
@@ -41,7 +41,7 @@ export default async function (files: FileList, params?: any): Promise<FileList>
    <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
     <h1 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">FilesWorkflow file sending notification</h1>
     <p style="font-weight: bold; font-size: 18px; color: #e74c3c;">This is an automatically generated email, please do not reply.</p>
-    <p>Hello, </p>
+    <p>Hello,</p>
     <p>This is an automatic notification email from the <strong>FilesWorkflow</strong> service. We would like to inform you that the files you need have been sent to you through our service.</p>
     <p style="background-color: #f1c40f; padding: 10px; border-radius: 5px;">
         <strong>Important Note:</strong> Please check the email attachment, where you will find the files you need.
