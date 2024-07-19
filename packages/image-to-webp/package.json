@@ -1,0 +1,40 @@
+{
+  "name": "image-to-webp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "taskConfig": {
+    "name": "Image to WebP",
+    "inputType": 1,
+    "runOnServer": false,
+    "params": [
+      {
+        "id": "quality",
+        "key": "quality",
+        "defaultValue": "0.8"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "heic2any": "^0.0.4",
+    "webp-converter-browser": "^1.0.4"
+  },
+  "latestVersionId": "35c4325973eb447578939bc147f6c2ef",
+  "updatedAt": "2024-07-18T23:08:15.000Z",
+  "createdAt": "2024-07-18T23:08:14.611Z",
+  "published": true
+}

@@ -1,0 +1,19 @@
+<script src="FileSaver.min.js"></script>
+<div>
+    <input type="file" id="file" />
+    <img class="object-fit: contain;" id="image" width="500px" height="500px" src="" alt="image" />
+</div>
+<script>
+    document.getElementById('file').addEventListener('change', async(e) => {
+        const file = e.target.files[0];
+        import ('./task.js').then(async module => {
+            if (module.default) {
+                const res = await module.default(file);
+                const blob = new Blob([res], {
+                    type: 'image/png'
+                });
+                saveAs(blob, 'image.png');
+            }
+        });
+    });
+</script>

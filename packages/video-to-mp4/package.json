@@ -1,0 +1,45 @@
+{
+  "name": "video-to-mp4",
+  "version": "1.0.0",
+  "description": "",
+  "taskConfig": {
+    "name": "Video to MP4",
+    "description": "Convert video files to mp4 format, supporting multiple files.",
+    "runOnServer": false,
+    "inputType": 1,
+    "params": [
+      {
+        "id": "width",
+        "key": "width",
+        "defaultValue": "auto"
+      },
+      {
+        "id": "height",
+        "key": "height",
+        "defaultValue": "auto"
+      }
+    ],
+    "supportFileTypes": [
+      "video/*"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "latestVersionId": "78dcb92681ba5e3931fa275b26d239c9",
+  "updatedAt": "2024-07-18T23:08:14.236Z",
+  "createdAt": "2024-07-18T23:08:14.611Z",
+  "published": true
+}

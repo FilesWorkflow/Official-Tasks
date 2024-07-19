@@ -1,0 +1,32 @@
+<script src="FileSaver.min.js"></script>
+<div>
+    <input type="file" id="file" multiple/>
+</div>
+<script>
+    document.getElementById('file').addEventListener('change', async(e) => {
+        const files = e.target.files;
+        if (files.length === 0) {
+            return;
+        }
+        import ('./task.js').then(async module => {
+            if (module.default) {
+                const res = await module.default(files, {
+                    width: 960,
+                    height: "auto",
+                    fps: 30,
+                    maxColors: 256,
+                    loop: 3,
+                    durationInSeconds: 2.5,
+                    startTimeInSeconds: 2.5
+                }, (progressMsg) => {
+                    console.log(progressMsg);
+                });
+                console.log(res);
+                for (let i = 0; i < res.length; i++) {
+                    const blob = new Blob([res[i]]);
+                    saveAs(blob, `processed_${res[i].name}`);
+                }
+            }
+        });
+    });
+</script>

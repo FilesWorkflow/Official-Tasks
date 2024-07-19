@@ -1,0 +1,41 @@
+{
+  "name": "send-file-to-email",
+  "title": "Send file to email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/task.js",
+  "taskConfig": {
+    "runOnServer": true,
+    "type": "module",
+    "inputType": 1,
+    "params": [
+      {
+        "id": "emailTo",
+        "key": "emailTo",
+        "defaultValue": ""
+      }
+    ]
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"webpack --watch --mode development\" \"node --watch test/test.js\"",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv-webpack": "^8.1.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.4.15",
+    "jszip": "^3.10.1",
+    "nodemailer": "^6.9.14"
+  },
+  "latestVersionId": "1a030a6ff61611949070f8dc8befef04",
+  "updatedAt": "2024-07-19T07:11:58.396Z",
+  "createdAt": "2024-07-19T06:50:25.919Z",
+  "published": true
+}

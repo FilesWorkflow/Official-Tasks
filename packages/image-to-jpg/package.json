@@ -1,0 +1,40 @@
+{
+  "name": "image-to-jpg",
+  "title": "Image to JPG",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "taskConfig": {
+    "name": "Image to JPG",
+    "supportFileTypes": [
+      "image/*"
+    ],
+    "inputType": 1,
+    "runOnServer": false,
+    "params": [
+      {
+        "id": "quality",
+        "key": "quality",
+        "defaultValue": "0.8"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "latestVersionId": "c52cb8eb02e42949b7ff86740831c92c",
+  "updatedAt": "2024-07-18T23:08:14.931Z",
+  "createdAt": "2024-07-18T23:08:14.611Z",
+  "published": true
+}

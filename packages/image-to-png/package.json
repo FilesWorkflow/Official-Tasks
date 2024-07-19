@@ -1,0 +1,32 @@
+{
+  "name": "image-to-png",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "taskConfig": {
+    "name": "Image to PNG",
+    "runOnServer": false,
+    "inputType": 1
+  },
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "heic2any": "^0.0.4"
+  },
+  "latestVersionId": "7027c05ba45588b668bf0033772529dc",
+  "updatedAt": "2024-07-18T23:08:15.224Z",
+  "createdAt": "2024-07-18T23:08:14.611Z",
+  "published": true
+}

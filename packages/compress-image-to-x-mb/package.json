@@ -1,0 +1,39 @@
+{
+  "name": "compress-image-to-x-mb",
+  "version": "1.0.0",
+  "description": "",
+  "taskConfig": {
+    "name": "Compress image to X MB",
+    "runOnServer": false,
+    "inputType": 1,
+    "params": [
+      {
+        "id": "maxSizeMB",
+        "key": "maxSizeMB",
+        "defaultValue": "1"
+      }
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "browser-image-compression": "^2.0.2"
+  },
+  "latestVersionId": "42f2468ed8dc38287de751b659b705fd",
+  "updatedAt": "2024-07-18T23:08:14.611Z",
+  "createdAt": "2024-07-18T23:08:14.611Z",
+  "published": true
+}

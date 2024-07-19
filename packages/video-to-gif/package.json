@@ -1,0 +1,70 @@
+{
+  "name": "video-to-gif",
+  "version": "1.0.0",
+  "description": "",
+  "taskConfig": {
+    "name": "Video to GIF",
+    "description": "Convert video files to GIF, supporting multiple files.",
+    "runOnServer": false,
+    "inputType": 1,
+    "params": [
+      {
+        "id": "width",
+        "key": "width",
+        "defaultValue": "auto"
+      },
+      {
+        "id": "height",
+        "key": "height",
+        "defaultValue": "auto"
+      },
+      {
+        "id": "fps",
+        "key": "fps",
+        "defaultValue": "10"
+      },
+      {
+        "id": "loop",
+        "key": "loop",
+        "defaultValue": "0"
+      },
+      {
+        "id": "maxColors",
+        "key": "maxColors",
+        "defaultValue": "128"
+      },
+      {
+        "id": "startTimeInSeconds",
+        "key": "startTimeInSeconds",
+        "defaultValue": "0"
+      },
+      {
+        "id": "durationInSeconds",
+        "key": "durationInSeconds",
+        "defaultValue": "auto"
+      }
+    ],
+    "supportFileTypes": [
+      "video/*"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "latestVersionId": "fed5561c3a6ffce9c07b2415ecce200c",
+  "updatedAt": "2024-07-18T23:08:14.183Z",
+  "createdAt": "2024-07-18T23:08:14.611Z",
+  "published": true
+}
